@@ -1,4 +1,4 @@
-# IBM Automation Document Processing(IBM CLOUD)
+# IBM Automation Document Processing - IBM CLoud Pak for Business Automation (IBM CLOUD)
 
 This article is intended to guide readers into an easy installation of an IBM Automation Document Processing instance using IBM Cloud managed Openshift Cluster.
 This steps are for demonstrations only and not intended for an actual environment. Security and performance considerations must be addressed for each component in any installation
@@ -11,7 +11,7 @@ IBM Cloud components used were:
 2. A configured storage class to handle RWX(read,write,many) volumes of at least 500 GB
 
 ***
-### 2.Preparing the ADP namespace and REDHAT OPENSHIFT CLUSTER (ROKS)
+### 2.Preparing the ADP namespace and REDHAT OPENSHIFT CLUSTER (ROKS) / Install the operator
 #### For this step you must use a terminal console with the oc command line tool installed
 #### For this step you must be logged in into REDHAT OPENSHIFT CLUSTER (ROKS)
 ```
@@ -60,9 +60,37 @@ IBM Cloud components used were:
  ```
   
 * In this screen select the type of platform, in this case option 1
-![Cluster1](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/cluster1.png "Cluster1")
+![Cluster2](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/cluster1.png "Cluster1")
+ 
+* In this screen select the type of depoyment to use, in this case option 1
+![Cluster2](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/cluster2.png "Cluster2")
+ 
+* Next enter the name of the project to use, in this case "adp"
+![Cluster3](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/cluster3.png "Cluster3")
+ 
+* Next enter the user to make the deployment, in this case choose your asigned IAM#User
+![Cluster4](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/cluster4.png "Cluster4")
+ 
+* Next, indicate that you already have an Entitlement Registry key
+![Cluster5](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/cluster5.png "Cluster5")
 
+* Next, enter the Entitlement Registry key 
+![Cluster6](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/cluster6.png "Cluster6")
+ 
+* Next, enter the name of the storage class to be used for the operator
+![Cluster7](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/cluster7.png "Cluster7")
 
+* The operator installation will start, the process will take about 15 minutes, check the adp and ibm-common-services namespaces for running pods
+ 
+**
+### 3.Instaling the ADP component in Cloud Pak for Business Automation
+#### For this step you must use a terminal console with the oc command line tool installed
+#### For this step you must be logged in into REDHAT OPENSHIFT CLUSTER (ROKS)
+ 
+8.In the same directory run the deployment script and follow the prompts in the command window
+ ```
+ #./cp4a-deployment.sh
+```
 
 ***
 ***
