@@ -62,13 +62,13 @@ IBM Cloud components used were:
 * In this screen select the type of platform, in this case option 1
 ![Cluster2](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/cluster1.png "Cluster1")
  
-* In this screen select the type of depoyment to use, in this case option 1
+* In this screen select the type of deployment to use, in this case option 1
 ![Cluster2](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/cluster2.png "Cluster2")
  
 * Next enter the name of the project to use, in this case "adp"
 ![Cluster3](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/cluster3.png "Cluster3")
  
-* Next enter the user to make the deployment, in this case choose your asigned IAM#User
+* Next enter the user to make the deployment, in this case choose your assigned IAM#User
 ![Cluster4](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/cluster4.png "Cluster4")
  
 * Next, indicate that you already have an Entitlement Registry key
