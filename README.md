@@ -1,4 +1,4 @@
-# IBM Automation Document Processing - IBM CLoud Pak for Business Automation (IBM CLOUD)
+# IBM Automation Document Processing - IBM Cloud Pak for Business Automation (IBM CLOUD)
 
 This article is intended to guide readers into an easy installation of an IBM Automation Document Processing instance using IBM Cloud managed Openshift Cluster.
 This steps are for demonstrations only and not intended for an actual environment. Security and performance considerations must be addressed for each component in any installation
