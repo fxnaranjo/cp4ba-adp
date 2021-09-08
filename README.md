@@ -82,12 +82,12 @@ IBM Cloud components used were:
 
 * The operator installation will start, the process will take about 15 minutes, check the adp and ibm-common-services namespaces for running pods
  
-**
+***
 ### 3.Instaling the ADP component in Cloud Pak for Business Automation
 #### For this step you must use a terminal console with the oc command line tool installed
 #### For this step you must be logged in into REDHAT OPENSHIFT CLUSTER (ROKS)
  
-8.In the same directory run the deployment script and follow the prompts in the command window
+* In the same directory run the deployment script and follow the prompts in the command window
  ```
  #./cp4a-deployment.sh
 ```
