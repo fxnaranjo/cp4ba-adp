@@ -10,6 +10,7 @@ IBM Cloud components used were:
 1. An Openshift cluster of three worker nodes (16x32) version 4.6.x (You must use version 4.6)
 2. A configured storage class to handle RWX(read,write,many) volumes of at least 500 GB
 
+***
 ### 2.Preparing the ADP namespace and REDHAT OPENSHIFT CLUSTER (ROKS)
 #### For this step you must use a terminal console with the oc command line tool installed
 #### For this step you must be logged in into REDHAT OPENSHIFT CLUSTER (ROKS)
@@ -25,22 +26,14 @@ IBM Cloud components used were:
 #oc create secret docker-registry ibm-entitlement-key --docker-username=cp --docker-password=<token> --docker-server=cp.icr.io -n filenet
 ```
 
-[ldap](https://github.com/fxnaranjo/filenet/tree/main/ldap)
+1. Obtain the helper files from [here](https://github.com/fxnaranjo/cp4ba-adp/blob/main/helper/ibm-cp-automation-3.1.1.tgz) and untar in a local directory
+
+2. Navigate to the following directory: ibm-cp-automation-3.1.1/ibm-cp-automation/inventory/cp4aOperatorSdk/files/deploy/crs and untar the cert-k8s file
+```
+#tar -xvf cert-k8s-21.0.2.tar
+```
 
 
-***
-### 6.Preparing the ADP namespace in REDHAT OPENSHIFT CLUSTER (ROKS)
-#### For this step you must use a terminal console with the oc command line tool installed
-#### For this step you must be logged in into REDHAT OPENSHIFT CLUSTER (ROKS)
-```
-#oc new-project adp
-
-#oc adm policy add-scc-to-user privileged -z ibm-cp4a-operator -n filenet
-```
-1. Download the following file from repo
-```
-#git clone https://github.com/icp4a/cert-kubernetes.git
-```
 
 
 
