@@ -17,13 +17,16 @@ IBM Cloud components used were:
 #oc new-project adp
 ```
 
-#### You can obtain this key using this procedure:
+#### Creata a secret to access IBM Container regisrty, You can obtain this key using this procedure:
 * Log in to [MyIBM Container Software Library](https://myibm.ibm.com/products-services/containerlibrary) with the IBMid and password that is associated with the entitled software.
 * In the Container software library tile, verify your entitlement on the View library page, and then go to Get entitlement key to retrieve the key. 
 
 ```
 #oc create secret docker-registry ibm-entitlement-key --docker-username=cp --docker-password=<token> --docker-server=cp.icr.io -n filenet
 ```
+
+[ldap](https://github.com/fxnaranjo/filenet/tree/main/ldap)
+
 
 ***
 ### 6.Preparing the ADP namespace in REDHAT OPENSHIFT CLUSTER (ROKS)
