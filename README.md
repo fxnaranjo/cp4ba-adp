@@ -25,7 +25,7 @@ IBM Cloud components used were:
 ```
 #oc create secret docker-registry ibm-entitlement-key --docker-username=cp --docker-password=<token> --docker-server=cp.icr.io -n filenet
 ```
-
+***
 1. Obtain the helper files from [here](https://github.com/fxnaranjo/cp4ba-adp/blob/main/helper/ibm-cp-automation-3.1.1.tgz) and untar in a local directory
 
 2. Navigate to the following directory: ibm-cp-automation-3.1.1/ibm-cp-automation/inventory/cp4aOperatorSdk/files/deploy/crs and untar the cert-k8s file
@@ -33,9 +33,18 @@ IBM Cloud components used were:
 #tar -xvf cert-k8s-21.0.2.tar
 ```
 
+3.Change directory to the cert-kubernetes/descriptors folder
+```
+#cd cert-kubernetes/descriptors
+```
 
-
-
+4.Open the cluster_role_binding.yaml file and replace the placeholder string <NAMESPACE> with the target namespace where you want to install the Cloud Pak.
+  
+5. Apply the cluster_role_binding.yaml and cluster_role.yaml files
+```
+#oc apply -f cluster_role.yaml
+#oc apply -f cluster_role_binding.yaml
+```
 
 
 
