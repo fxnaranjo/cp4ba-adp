@@ -23,7 +23,7 @@ IBM Cloud components used were:
 * In the Container software library tile, verify your entitlement on the View library page, and then go to Get entitlement key to retrieve the key. 
 
 ```
-#oc create secret docker-registry ibm-entitlement-key --docker-username=cp --docker-password=<token> --docker-server=cp.icr.io -n filenet
+#oc create secret docker-registry ibm-entitlement-key --docker-username=cp --docker-password=<token> --docker-server=cp.icr.io -n adp
 ```
 ***
 1.Obtain the helper files from [here](https://github.com/fxnaranjo/cp4ba-adp/blob/main/helper/ibm-cp-automation-3.1.1.tgz) and untar in a local directory
