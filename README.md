@@ -4,7 +4,7 @@ This article is intended to guide readers into an easy installation of an IBM Au
 This steps are for demonstrations only and not intended for a production environment. Security and performance considerations must be addressed for each component in any installation
 
 ***
-### 1.ARCHITECTURE
+### 1.Architecture
 
 IBM Cloud components used were:
 1. An Openshift cluster of three worker nodes (16x32) version 4.6.x (You must use version 4.6)
