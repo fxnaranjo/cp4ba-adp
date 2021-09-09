@@ -91,7 +91,61 @@ IBM Cloud components used were:
  ```
  #./cp4a-deployment.sh
 ```
+ 
+* In the first screen hit ENTER and ACCEPT the IBM Cloud Pak for Business Automation license
+![Adp1](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/adp1.png "Adp1")
+ 
+* Next select the type of installation, in this case "New"
+![Adp2](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/adp2.png "Adp2")
 
+* Next select the type of deployment, in this case "Demo"
+![Adp3](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/adp3.png "Adp3")
+
+* Next select the platform, in this case "ROKS"
+![Adp4](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/adp4.png "Adp4")
+
+* Select the Cloud Pak for Business Automation capability to install, in this case # 6
+![Adp5](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/adp5.png "Adp5")
+ 
+* Next just hit ENTER to continue without additional capabilities
+![Adp6](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/adp6.png "Adp6")
+
+* Next answer "No" to the question about CPE storage
+![Adp7](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/adp7.png "Adp7")
+ 
+* Next just hit ENTER to continue without optional components
+![Adp8](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/adp8.png "Adp8")
+ 
+* Enter the storage class for slow,medium,fast volumnes
+![Adp9](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/adp9.png "Adp9")
+
+* Next answer "No" to the question about GPU
+![Adp10](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/adp10.png "Adp10")
+ 
+* Review the summary and answer "Yes" to begin the installation
+![Adp11](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/adp11.png "Adp11")
+
+* The ADP installation will start, the process will take about 3.5 hours, check the adp and ibm-common-services namespaces for running pods
+ 
+* The final running pods in the adp project
+![Adp12](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/adp12.png "Adp12")
+ 
+* The final running pods in the ibm-common-services project
+![Adp13](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/adp13.png "Adp13")
+ 
+***
+### 4.Obtaining the ADP URLs and credentials
+#### For this step you must use a terminal console with the oc command line tool installed
+#### For this step you must be logged in into REDHAT OPENSHIFT CLUSTER (ROKS)
+
+* In the same directory run the post-deployment script
+ ```
+ #./cp4a-post-deployment.sh
+```
+
+* The screen will show you all the important URLs and credentials
+![Adp14](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/adp14.png "Adp14")
+ 
 ***
 ***
 ***
