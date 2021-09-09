@@ -127,10 +127,10 @@ IBM Cloud components used were:
 
 * The ADP installation will start, the process will take about 3.5 hours, check the adp and ibm-common-services namespaces for running pods
  
-* The final running pods in the adp project
+* The final running pods in the adp project<br/>
 ![Adp12](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/adp12.png "Adp12")
  
-* The final running pods in the ibm-common-services project
+* The final running pods in the ibm-common-services project<br/>
 ![Adp13](https://github.com/fxnaranjo/cp4ba-adp//raw/main/images/adp13.png "Adp13")
  
 ***
