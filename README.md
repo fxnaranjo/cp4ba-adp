@@ -7,7 +7,7 @@ This steps are for demonstrations only and not intended for a production environ
 ### 1.Architecture
 
 IBM Cloud components used were:
-1. An Openshift cluster of three worker nodes (16x32) version 4.6.x (You must use version 4.6)
+1. An Openshift cluster of three worker nodes (16x32) version 4.6.x (You must use version 4.6.x)
 2. A configured storage class to handle RWX(read,write,many) volumes of at least 500 GB
 
 ***
